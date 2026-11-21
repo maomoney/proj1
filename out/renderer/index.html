@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PixiJS Box Demo</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: #1a1a2e;
+        font-family: system-ui, sans-serif;
+        color: #e0e0e0;
+      }
+      #app {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 16px;
+        box-sizing: border-box;
+      }
+      h1 {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0;
+      }
+      p {
+        margin: 0;
+        font-size: 13px;
+        opacity: 0.7;
+      }
+      canvas {
+        border-radius: 8px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      }
+      #res-select {
+        appearance: none;
+        background: #0f3460;
+        color: #e0e0e0;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 6px;
+        padding: 6px 32px 6px 12px;
+        font-size: 13px;
+        font-family: inherit;
+        cursor: pointer;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23e0e0e0' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+      }
+      #res-select:focus {
+        outline: none;
+        border-color: rgba(255, 255, 255, 0.4);
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-DtV6PYVa.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>PixiJS Box Demo</h1>
+      <p>Click to toggle state &middot; drag to move</p>
+    </div>
+  </body>
+</html>
